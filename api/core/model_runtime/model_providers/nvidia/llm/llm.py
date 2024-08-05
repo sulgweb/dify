@@ -38,7 +38,6 @@ class NVIDIALargeLanguageModel(OAIAPICompatLargeLanguageModel):
         'nvidia/nemotron-4-340b-instruct': '',
         'microsoft/phi-3-medium-128k-instruct':'',
         'microsoft/phi-3-mini-128k-instruct':''
-        
     }
 
     def _invoke(self, model: str, credentials: dict,
