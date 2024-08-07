@@ -1,0 +1,32 @@
+provider: taichu
+label:
+  en_US: taichu
+  zh_Hans: taichu
+description:
+  en_US: The Institute of Automation of the Chinese Academy of Sciences and the Wuhan Institute of Artificial Intelligence launched a new generation of multimodal large model.
+  zh_Hans: 中国科学院自动化研究所和武汉人工智能研究院推出新一代多模态大模型。
+icon_small:
+  en_US: icon_s_en.svg
+icon_large:
+  en_US: icon_l_en.svg
+background: "#e3f0ff"
+help:
+  title:
+    en_US: Get your API Key from taichu
+    zh_Hans: 从 taichu 获取 API Key
+  url:
+    en_US: https://ai-maas.wair.ac.cn/#/settlement/api/key
+supported_model_types:
+  - llm
+configurate_methods:
+  - predefined-model
+provider_credential_schema:
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        zh_Hans: 在此输入您的 API Key
+        en_US: Enter your API Key
